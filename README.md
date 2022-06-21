@@ -2,7 +2,7 @@
 Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaje de programación JS, curso tomado del canal de youtube Dalto
 
 > Link al curso: "(https://youtu.be/z95mZVUcJ-E)"
-> ![JS]([/image/js.jpg])
+![image](/image/js.jpg)
 
 # Temas vistos en este repo
 -  ¿Qué es javascript?
