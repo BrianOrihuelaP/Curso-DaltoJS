@@ -1,13 +1,12 @@
 
 let recipiente = "papel";
-string = "cadena de texto"
-var number= 19
-booleano = true
+string = "cadena de texto";
+var number= 19;
+booleano = true;
 
 // Métodos de declaracion de variables: 
 // var, let, const
 // const es una variable constante por lo tanto NUNCA va a cambiar su valor, se define solamente una vez
-// declarando un variable let
 
 const persona = "Brian";
 // las constantes se deben inicializar en la misma linea de la declaracion
@@ -17,8 +16,10 @@ numero = 23;
 // inicianizando
 //  esta variable solo tiene un alcance local
 
+//var se usa cuando se quiere usar variables globales 
+
 // SCOPE: Limitacion de valores y/o variables en su contexto
-// Hoisting es la manera que nos indica como se ejecutan las partes del codgo
+// Hoisting es la manera que nos indica como se ejecutan las partes del codigo
 
 let numero2 = null; //variable vacia
 
@@ -26,8 +27,10 @@ let number0 = 5, number1 = "Ulises";
 let multiplicacion = number0 * number1; //esto genera NaN
 
 // NaN significa Non a Number lo cual nos indica que no podemos combinar los datos
+
 // let nombre = prompt("Decime tu nombre: ")
 // alert("Hola estimad@ " + nombre);
+
 // OPERADORES de asignacion ***********************************************************
 let x=16, x0 = 12;
 x += 9;
@@ -64,6 +67,7 @@ Suma = numeros0 + numeros1;
 
 resta = numeros0 + numeros1;
 // alert("resta : " + resta)
+
 //PRE Y POST DECREMENTO
 numeros0--; //primero asigna yluego resta
 //--numeros0 = prioriza la resta
@@ -101,8 +105,9 @@ document.write("Numeros concatenados: " + resultado0);
 
 frase1 = "Hola Luke"
 frase2 = "Yo soy tu padre!!!"
+frase3 = frase1 + " Skywalker " + frase2;
+
 //sin backticks
-frase3 = frase1 + " Skywalker " + frase2
 document.write("<br><br>");
 document.write("CONCATENACIÓN DE CADENAS");
 document.write("<br><br>");
