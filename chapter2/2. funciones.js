@@ -82,5 +82,6 @@ console.log(`Función multiplicar: ${a} * ${b}` + ": " +  multiplicar(a,b));
 
 const saludoFlecha = nombre => console.log(`Hola ${nombre}, estás programando en JS`);
 saludoFlecha("Brian");
+
 // esto tiene una ventaja, dado que se reduce el codigo, es mas legible y los valores se retornan automaticamente
 

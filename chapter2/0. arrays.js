@@ -8,6 +8,7 @@ console.log(frutas);
 
 //agregando un elemento al final de la lista
 frutas.push("durazno");
+console.log(frutas);
 
 //mostrando los elementos a travez de su indice 
 leerArray = (posicion) => {
@@ -15,7 +16,8 @@ leerArray = (posicion) => {
     else console.log("El elemento es: " + frutas[posicion]);  
 }
 
-leerArray(8)
+leerArray(2);
+leerArray(8);
 
 //Array asociativo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //tipo JSON - notacion de objetos

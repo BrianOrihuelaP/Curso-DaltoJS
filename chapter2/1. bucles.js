@@ -44,9 +44,9 @@ console.log("salio del bucle con break!!!");
 // For ******************************************
 
 for (let index = 0; index < 20; index++) {
-    console.log("Numero : " + numero);
-    numero++;
-    if (index >= 10) numero++;
+        console.log("Numero : " + numero);
+        numero++;
+        if (index >= 10) numero++;
     // En el momento que el indice sea igual a 10, suma otra unidad mas y sumaria 2 unidades en cada vuelta 
 }
 
@@ -78,7 +78,7 @@ i = 0;
 for (i; i < 20; i++) {
     if (i == 10) continue;
     // con esta instruccion se salta el 10 por que entra al if y se le indica que continue pero no existe un log y no imprime 
-    console.log("Bucle continue:  " + i);
+    console.log("Bucle continue:  " + i); //por el if se salta esta instruccion
 }
 
 // FOR IN & FOR OF
@@ -89,7 +89,6 @@ console.log("*****FOR IN & FOR OF*****");
 for (animal in animales) {
     console.log(animal);
 }
-
 //FOR IN DEVUELVE LOS INDICES DE LOS ELEMENTOS
 console.log("**********");
 
@@ -139,7 +138,7 @@ for (let array of array1) {
     if (array == array0) {
         // en el momento de que se lea el otro vector que cambie la lectura y empiece en for in
         for (let array in array0) {
-            continue lecturaSegundo; 
+            // continue lecturaSegundo; 
             //aqui decimos que solo continue con el ciclo exterior y que no haga nada en este
             console.log(array0[array]);
             // va imprimiendo por medio del indice
