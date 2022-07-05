@@ -4,7 +4,7 @@
 // y métodos apropiados para operar con dichos datos. Cada objeto creado a partir de la clase se denomina instancia de la clase.
 
 class animal {
-    constructor(especie,edad,color){
+    constructor(especie, edad, color) {
         // la palabra this hace referencia a que se creara un atributo del objeto especifico creado
         this.especie = especie;
         this.edad = edad;
@@ -61,13 +61,13 @@ console.log(gato.getInfo());
 
 // HERENCIA********************************************************
 
-class perro extends animal{
-    constructor(especie, edad, color, raza){
+class perro extends animal {
+    constructor(especie, edad, color, raza) {
         super(especie, edad, color);
         this.raza = raza;
     }
 
-     ladrar = () => {
+    ladrar = () => {
         return "WAW WAW!!! AUUUUU!!!"
     }
 
@@ -77,11 +77,11 @@ class perro extends animal{
     }
     //GETTERS & SETTERS => son metodos que se pueden tomar como propiedad de la clase 
 
-    set modRaza(newRaza){
+    set modRaza(newRaza) {
         this.raza = newRaza;
     }
 
-    get getRaza(){
+    get getRaza() {
         return this.raza;
     }
 
