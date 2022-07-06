@@ -136,7 +136,6 @@ class celularGamaAlta extends celulares{
     }
 }
 
-
 const iPhone14 = new celularGamaAlta("Apple", "iPhone 14 pro Max", "Silver", "222 gramos", "1170 x 2532 pixels", "8K 30fps; 4k 60fps; 1080 120fps","48 Megapixeles, f 2.1", "4", "512", "A16 Bionic", "1200 fps", "Two Biometric 3D", "65 Watts");
 
 // mandando a llamar los metodos
@@ -154,3 +153,4 @@ console.log(iPhone14);
 console.log(iPhone14.prender());
 console.log("Caracteristicas Generales****************************");
 console.log(iPhone14.mostrarCaracteristicasAltaGama());
+
