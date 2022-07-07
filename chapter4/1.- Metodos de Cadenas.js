@@ -13,21 +13,21 @@ console.log(resultado);
 // *startsWith()* = (resultado = boolean) si una cadena comienza con los caracteres de otra cadena, devuelve true
 console.log("***********************************STARTSWITH() && ENDSWITH()*****************************************");
 
-console.log(resulado = cadena0.startsWith("Hola"));
-console.log(resulado = cadena0.startsWith("cadena"));
+console.log(resultado = cadena0.startsWith("Hola"));
+console.log(resultado = cadena0.startsWith("cadena"));
 
 // *includes()* = si una cadena puede encontrarse dentro de otra cadena, devuelve true
 console.log("**************************************INCLUDES()************************************************");
 // comprueba si la cadena1 esta contenida en la cadena0
 
 cadena1 = "cadena";
-console.log(resulado = cadena0.includes(cadena1));
+console.log(resultado = cadena0.includes(cadena1));
 
 cadena1 = "de";
-console.log(resulado = cadena0.includes(cadena1));
+console.log(resultado = cadena0.includes(cadena1));
 
 cadena1 = "no";
-console.log(resulado = cadena0.includes(cadena1));
+console.log(resultado = cadena0.includes(cadena1));
 
 // *indexOf()* = devuelve el indice del primer carater de la cadena, si no existe devuelve -1
 console.log("**************************************INDEXOF()************************************************");
