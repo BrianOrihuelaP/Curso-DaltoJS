@@ -199,4 +199,3 @@ console.log(typeof strObjeto);
 
 let strObjStr = strObjeto.valueOf();
 console.log(`Cadena de tipo objeto: ${strObjeto} ahora es: ${typeof strObjStr}`);
-
