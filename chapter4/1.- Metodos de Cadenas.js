@@ -29,7 +29,7 @@ console.log(resultado = cadena0.includes(cadena1));
 cadena1 = "no";
 console.log(resultado = cadena0.includes(cadena1));
 
-// *indexOf()* = devuelve el indice del primer carater de la cadena, si no existe devuelve -1
+// *indexOf()* = devuelve el indice del primer carater de la cadena (der a izq), si no existe devuelve -1
 console.log("**************************************INDEXOF()************************************************");
 // Aqui hice esta funcion para hacer mas agil las pruebas y no estar repitiendo el codigo 
 
@@ -37,7 +37,7 @@ let indexString = (palabra, cadena) => {
     let indice = cadena.indexOf(palabra);
     if (indice != -1) {
         return `la palabra "${palabra}" se encuentra en la posicion: ${indice} de la cadena: 
-    "${cadena}"`;
+                "${cadena}"`;
     } else {
         return `La palabra ${palabra} no esta contenida en la cadena`;
     }
@@ -49,25 +49,25 @@ console.log(indexString("en", cadena0));
 console.log(indexString("curso", cadena0));
 console.log(indexString("JS", cadena0));
 
-// *lastIndexOf()* = devuelve el ultimo indice del primer carater de la cadena, si no existe devuelve 1
+// *lastIndexOf()* = devuelve el indice del primer carater de la cadena (der a izq), si no existe devuelve 1
 console.log("**************************************LASTINDEXOF()************************************************");
 
 let lastIndexString = (palabra, cadena) => {
     let indice = cadena.lastIndexOf(palabra); //AQUI LLAMAMOS LA FUNCION
-    let cadena2 = cadena.slice(indice, -1);
-    // slice vacia el contenido de una cadena a otra a partir de un rango
+    let cadena2 = cadena.slice(indice);
+    // slice vacia el contenido de una cadena a otra a partir del indice
     if (indice != -1) {
         // SI SE ENCUENTRA LA CADENA, ENTONCES MUESTRAME LO SIGUIENTE
         return `La palabra "${palabra}" se encuentra en la posicion: ${indice} de la cadena: 
                 "${cadena}"; 
-                Desde aqui se encontro la palabra: "${cadena2}"`;
+                Desde aqui se encontro la palabra: "${cadena2}"` + "Tipo de dato: "  + typeof cadena2;
     } else {
         // SI NO SE ENCUENTRA ENTONCES RETORNA ESTE MENAJE
         return `La palabra ${palabra} no esta contenida en la cadena`;
     }
 }
 
-//  Aquí lo que hace el metodo, es que recorre toda la cadena de atras hacia delante, y si encuentra la palabra en multiples ocasiones
+//  Aquí lo que hace el metodo, es que recorre toda la cadena de der a izq, y si encuentra la palabra en multiples ocasiones
 //  solo toma la primera incidencia recorrida (ultima palabra de la cadena si se lee normalmente)
 console.log(lastIndexString("JS", cadena0));
 console.log(lastIndexString("de", cadena0));
