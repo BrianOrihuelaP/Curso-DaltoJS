@@ -44,6 +44,8 @@ class celulares {
             // si se oprime el boton de prender y ya está encendido entonces apaga
             this.encendido = false;
             return `Apagando....`;
+        } else {
+            return `Error Impossible Turn on!!!`
         }
     }
 
@@ -99,7 +101,7 @@ console.log(RedmiNote12.prender());
 console.log(RedmiNote12.grabar());
 // Simulando que se toman 40 fotos en el celular
 for (let index = 0; index < 40; index++) {
-    console.log(RedmiNote12.tomarFoto());
+    console.log(RedmiNote12.tomarFoto() + `  ->  Foto: ${index}`);
 }
 console.log(RedmiNote12.reiniciar());
 console.log(RedmiNote12);
@@ -114,7 +116,7 @@ console.log(RedmiNote12.mostrarCaracteristicas());
 // *Parte 2* - Crear Soluciones
 // - Implementar todas las cualidades anteriores ahora para celulares de gama alta
 
-class celularGamaAlta extends celulares{
+class celularGamaAlta extends celulares {
     constructor(marca, modelo, color, peso, rePantalla, reCamara, sensorCamara, ram, rom, procesador, slowMotion, recFacial, fastCharge) {
         super(marca, modelo, color, peso, rePantalla, reCamara, sensorCamara, ram, rom, procesador);
         this.slowMotion = slowMotion;
@@ -122,7 +124,7 @@ class celularGamaAlta extends celulares{
         this.fastCharge = fastCharge;
     }
 
-    grabarSlow(){
+    grabarSlow() {
         if (this.bateria >= 20) {
             this.bateria -= 2;
             return `"Tomando video en slow motion... Resolucion: ${this.reCamara} - ${this.slowMotion}  `
@@ -131,12 +133,12 @@ class celularGamaAlta extends celulares{
         }
     }
 
-    mostrarCaracteristicasAltaGama(){
+    mostrarCaracteristicasAltaGama() {
         return `${this.mostrarCaracteristicas()}; Carga Rapida: ${this.fastCharge}`
     }
 }
 
-const iPhone14 = new celularGamaAlta("Apple", "iPhone 14 pro Max", "Silver", "222 gramos", "1170 x 2532 pixels", "8K 30fps; 4k 60fps; 1080 120fps","48 Megapixeles, f 2.1", "4", "512", "A16 Bionic", "1200 fps", "Two Biometric 3D", "65 Watts");
+const iPhone14 = new celularGamaAlta("Apple", "iPhone 14 pro Max", "Silver", "222 gramos", "1170 x 2532 pixels", "8K 30fps; 4k 60fps; 1080 120fps", "48 Megapixeles, f 2.1", "4", "512", "A16 Bionic", "1200 fps", "Two Biometric 3D", "65 Watts");
 
 // mandando a llamar los metodos
 console.log("GAMA ALTA ********************");
@@ -145,7 +147,7 @@ console.log(iPhone14.prender());
 console.log(iPhone14.grabar());
 // Simulando que se toman 40 fotos en el celular
 for (let index = 0; index < 40; index++) {
-    console.log(iPhone14.grabarSlow());
+    console.log(iPhone14.grabarSlow() +  `Video : ${index + 1}`);
 }
 console.log(iPhone14.tomarFoto());
 console.log(iPhone14.reiniciar());
