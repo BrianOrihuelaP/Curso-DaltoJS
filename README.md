@@ -22,11 +22,11 @@ Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaj
 -  Métodos con Cadenas 
 - - concat(), includes(), startsWith(), split(), subsring(), etc...
 -  Metodos con arreglos
---  Métodos TRANSFORMADORES
---  Métodos ACCESORES
---  Métodos DE REPETICION
+- - Métodos TRANSFORMADORES
+- - Métodos ACCESORES
+- - Métodos DE REPETICION
 -  Métodos y Atributos de MATH
---  sqrt(), cbrt(), round(), rand(), floor(), etc...
+- - sqrt(), cbrt(), round(), rand(), floor(), etc...
 
 
 
