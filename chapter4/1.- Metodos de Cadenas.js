@@ -105,8 +105,7 @@ cadena0 = "Hola ,como estas, me llamo Brian. Hola Brian, un gusto conocerte";
 resultado = cadena0.split(" ");
 
 for (let index = 0; index < resultado.length; index++) {
-    let element;
-    console.log(`Posicion ${index} = ` + (element = resultado[index]));
+    console.log(`Posicion ${index} = ` + (resultado[index]));
 }
 
 // *substring() = Nos retorna un pedazo de la cadena que deseemoa
@@ -163,7 +162,6 @@ resultado = cadena0;
 console.log(resultado + " " + " -> Tamaño del string: " + resultado.length);
 
 resultado = cadena0.trim();
-
 console.log(resultado + " " + " -> Tamaño del string: " + resultado.length);
 
 // *trimEnd() = elimina los espacios solo al final de la cadena 

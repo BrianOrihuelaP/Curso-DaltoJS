@@ -34,7 +34,7 @@ numero = Math.round(Math.random() * 100);
 console.log("Numero aleatorio redondeado con round: " + numero);
 // de esta manera multiplico la funcion Math por 100 para que me de numeros semi-ale. del 0 al 100
 // despues con round me redondea ese numero al valor entero mas cercano -> 23.345456 => 23
-// *DESVENTAJA = si se usa esta funcion tal y como esta, habra dos vesces la oportunadidad de sacar 1 y 99 en la funcion
+// *DESVENTAJA = si se usa esta funcion tal y como esta, habra dos veces la oportunadidad de sacar 1 y 99 en la funcion
 //  Pobabilidad de 1 = 2/100 ; Probabilidad de 99 = 2/100 
 
 numero = Math.floor(22.6666);

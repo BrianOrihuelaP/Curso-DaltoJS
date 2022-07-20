@@ -214,13 +214,13 @@ let suma = 0;
 
 numbers.forEach(item => suma += item);
 // El foreach es muy similar al for, en este caso decimos: 
-// recorre cada elemento del array y lo vas a guardar en item, despues de al variable "suma" se le va a sumar el valor de cada elemento
+// recorre cada elemento del array y lo vas a guardar en item, despues de a la variable "suma" se le va a sumar el valor de cada elemento
 // en cada iteracion 
 console.log(suma);
 
 const letras = ['a', 'b', 'c', 'a', 'b', 'a', 'a', 'c', 'b'];
 let contador = {};
-// como usaremos vector de letras, ocuparemos un objeto para meter la cunta en su literal -> {"letra" : 2 } 
+// como usaremos vector de letras, ocuparemos un objeto para meter el # de veces de la letra en su literal -> {"letra" : 2 } 
 
 letras.forEach(item => {
     if (contador[item]) {
