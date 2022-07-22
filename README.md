@@ -31,7 +31,11 @@ Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaj
 - - sqrt(), cbrt(), round(), rand(), floor(), etc...
 
 -  Propiedades y funciones de la consola
-- - log(), assert(), clear(), error(), info(), etc...
+- - Funciones de registro
+- - Funciones de agrupacion
+- - Funciones de temporización
+- - Estilo al texto en consola
+
 
 
 
