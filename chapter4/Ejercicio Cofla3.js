@@ -6,7 +6,6 @@
 // -Si hay mas de 20 alumnos anotados en la materia negar la inscripcion.
 // -Si hay menos de 20 alumnosinscribir a Cofla y añadirlo a la lista de alumnos.
 
-
 var materias;
 
 const inscripcion = (materia, nombre) => {
@@ -24,7 +23,7 @@ const inscripcion = (materia, nombre) => {
         // comparando si es que existe la propiedad (materia)
         return "La materia no existe";
     }else{
-        if (materias[materia].length <= 20 ) {
+        if (materias[materia].length <= 21 ) {
             // aqui se saca el # de alumnos (elementos) del array 
             validar =  busqueda(nombre, materias[materia]);
             // mandamos a llamar la funcion que inscribe
@@ -47,10 +46,11 @@ const busqueda = (nombre, vector) => {
     } else {
         // si no se encontro lo inscribimos, metemos elemento con push
         vector.push(nombre);
-        return `Inscrito exitosamente!`
+        return `Feliciades ${nombre} estas inscrito exitosamente!`
     }
 }
 
 // mandando a llamar las funciones
-console.log(inscripcion("fisica", "Cofla"));
+
+console.log(inscripcion("fisica", "Dilan"));
 console.log(materias);
