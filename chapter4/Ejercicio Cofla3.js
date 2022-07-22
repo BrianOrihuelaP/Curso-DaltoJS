@@ -9,7 +9,7 @@
 
 var materias;
 
-const inscripcion = (materia,nombre) => {
+const inscripcion = (materia, nombre) => {
     // Creando funcion la cual me dara toda la informacion de las materias;
     materias = {
         // creo el objeto con sus atributos (materias)
@@ -20,23 +20,27 @@ const inscripcion = (materia,nombre) => {
         // cada atributo tendra en su literal un vector con los alumnos
     }
 
-    for (const iterator in materias[materia]) {
-        if (iterator <= 20) {
-            for (replica of materias[materia]) {
-                console.log(replica);
-                if (replica == nombre) {
-                    return `No te puedes inscribir!!!`;
-                } else {
-                    return `Inscrito exitosamente!!!`;
-                }
-            }
-            // materias[materia].push("Cofla");
-        }else{
-            return `Lo siento ya no hay mas lugares para la materia ${materia}`;
+    if (materias[materia] == undefined) {
+        return "La materia no existe";
+    }else{
+        if (materias[materia].length <= 20 ) {
+            validar =  busqueda(nombre, materias[materia]);
+            return validar;
+        } else {
+            return `Lo siento ya no hay lugar!`;
         }
     }
-
 }
 
-console.log(inscripcion("fisica","Cofla"));
-// console.log(materias);
+const busqueda = (nombre, vector) => {
+    found = vector.find( alumno => alumno == nombre)
+    if (found == nombre) {
+        return `Ya estas inscrito...`
+    } else {
+        vector.push(nombre);
+        return `Inscrito exitosamente!`
+    }
+}
+
+console.log(inscripcion("fisica", "Cofla"));
+console.log(materias);

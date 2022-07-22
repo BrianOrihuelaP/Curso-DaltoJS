@@ -110,8 +110,6 @@ console.log(resultado);
 // de esta otra manera se copian todos los elementos a partir de la posicion idicada
 // *NOTA = No tendria caso copiar todos los elementos con slice, simplemente igualamos y ya
 
-
-
 // *Metodos cadena que tambien de utiliza en arrays: 
 
 let existe = sonyGames.includes("Uncharted");
