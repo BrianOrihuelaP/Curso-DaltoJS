@@ -14,11 +14,13 @@ Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaj
 - - Label
 - - Continue
 -  Funciones
+
 -  Programación Orientada a Objetos
 - - Clases (Abstracción, Modularidad, encapsulamiento, polimorfismo)
 - - Objetos
 - - Herencia
 - - Métodos estaticos
+
 -  Métodos con Cadenas 
 - - concat(), includes(), startsWith(), split(), subsring(), etc...
 -  Metodos con arreglos
@@ -27,6 +29,10 @@ Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaj
 - - Métodos DE REPETICION
 -  Métodos y Atributos de MATH
 - - sqrt(), cbrt(), round(), rand(), floor(), etc...
+
+-  Propiedades y funciones de la consola
+- - log(), assert(), clear(), error(), info(), etc...
+
 
 
 
