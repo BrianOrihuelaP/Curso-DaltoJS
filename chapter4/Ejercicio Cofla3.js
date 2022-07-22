@@ -21,26 +21,36 @@ const inscripcion = (materia, nombre) => {
     }
 
     if (materias[materia] == undefined) {
+        // comparando si es que existe la propiedad (materia)
         return "La materia no existe";
     }else{
         if (materias[materia].length <= 20 ) {
+            // aqui se saca el # de alumnos (elementos) del array 
             validar =  busqueda(nombre, materias[materia]);
+            // mandamos a llamar la funcion que inscribe
             return validar;
+            // retornamos el resultado de la funcion
         } else {
             return `Lo siento ya no hay lugar!`;
+            // si ya hay mas de 20, no permitimos la inscripcion
         }
     }
 }
 
 const busqueda = (nombre, vector) => {
+    // esta funcion nos va a indicar si es que existe o no el alumno en la materia
     found = vector.find( alumno => alumno == nombre)
+    // con esta instruccion sabremos si existe o no el alumno, find nos retorna el elemento a buscar
     if (found == nombre) {
+        // si find encuentra el elemento entonces igualamos nombre
         return `Ya estas inscrito...`
     } else {
+        // si no se encontro lo inscribimos, metemos elemento con push
         vector.push(nombre);
         return `Inscrito exitosamente!`
     }
 }
 
+// mandando a llamar las funciones
 console.log(inscripcion("fisica", "Cofla"));
 console.log(materias);
