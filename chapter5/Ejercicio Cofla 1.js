@@ -7,7 +7,7 @@
 
 // CREAR SOLUCIONES:
 // - Solicitar los datos y decirle si aprueba o no
-// - Mostrar todo esto con solores representativos en consola ( ej. reprobado - rojo)
+// - Mostrar todo esto con colores representativos en consola ( ej. reprobado - rojo)
 
 let trabajosTotales = 10;
 
