@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Raleway:ital,wght@0,700;1,300&display=swap');
+
+*{
+    color: white;
+}
+body{
+    background: black url('https://images3.alphacoders.com/649/649642.jpg') top fixed;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font: italic small-caps 700 48px 'Raleway', sans-serif;
+    font-variant: small-caps;
+    text-shadow: 8px 8px 8px white;
+}
+
+p{
+    text-align: center;
+    font-size: x-large;
+}
+
+h2{
+    text-shadow: 8px 8px 6px rgb(0, 0, 0);
+}
+
+input{
+    display: block;
+    margin: auto;
+    box-shadow: 6px 8px 7px rgb(187, 48, 48);
+}
+
+label{
+    font-size: 18px;
+    display: inline;
+    position: fixed;
+    left: 36%;
+    top: 53%;
+}
+
+
