@@ -34,15 +34,43 @@ document.write("<br>" + parrafoNode + " --> Elementos de la clase Nodo: " + parr
 // seleccionando las clases en una lista de nodos
 
 // 29) Metodos para Definir, Obtener y Eliminar valores de atributos.
-    // -setAttribute() = Modifica el valor de un atributo
-    // -getAttribute() = obtiene el valor de un atributo
-    // -removeAttribute() =  Remueve el valor de un atributo
-
 
 const rangoEdad = document.querySelector(".rango");
 document.write("<br> Input: " + rangoEdad)
 
-rangoEdad.setAttribute("type", "color");
+ // -setAttribute() = Modifica el valor de un atributo
+rangoEdad.setAttribute("type", "range");
 // modificando el atributo de tipo del input
+// si no cuenta alguna etiqueta HTML entonces añade el atributo
 // set atribute requiere: atributo a modificar, nuevo valor
 
+// -getAttribute() = obtiene el valor de un atributo
+document.write("<br> Atributo de la etiqueta input (JS) : " + rangoEdad.getAttribute("type"));
+
+ // -removeAttribute() =  Remueve el valor de un atributo
+//  rangoEdad.removeAttribute("type")
+//  elimina el atributo type del html haciendo inutil el input
+
+// * 30) Atributos globales
+//   -class = lista de clases del elemento separadas por espacios --> VISTO
+//   -id = define un identificador único. --> VISTO
+
+//   -contenteditable = indica si el elemento puede ser modificable por el usuario(bool)------------------------------------------
+let titulo = document.querySelector(".titulo");
+titulo.setAttribute("contenteditable","true");
+
+//   -dir = indica la direccionalidad del texto----------------------------------------------------------------------------------
+// titulo.setAttribute("dir","ltr");
+// esta propiedad indica la direccion del texto tal cual que la proppiedad en CSS ltr, rtl
+
+//   -hidden = indica si el elemento es o no relevante.------------------------------------------------------------------------------------------------
+// titulo.setAttribute("hidden","false");
+// para ocultar el elemento tal cual como en CSS
+
+//   -tabindex = indica si el elemento puede obtener un focus de input-----------------------------------------------------------
+let tabindex = document.querySelector(".seleccion");
+tabindex.setAttribute("tabindex","0");
+// con esta instruccion podemos seleccionar el documento al tabular
+
+//   -title =  contiene un texto con información relacionada al elemento al que pertenece.------------------------------------------------
+tabindex.setAttribute("title","Atributo title puesto en js")

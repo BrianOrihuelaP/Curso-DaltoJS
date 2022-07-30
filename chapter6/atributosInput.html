@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - INPUTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Atributos Input con JS</h1>
+    <label for="edad">Selecciona Color</label>
+    <input type="text" class="input-normal" name="edad" value="Javascript">
+    <br><br>
+
+    <label for="archivo">Sube File</label>
+    <input class="archivo" type="file" name="archivo">
+
+    <br><br><br>
+    <form id="formulario">
+        <label for="p1">Coloca tu nombre: </label>
+        <input type="text" name="p1" class="p1"  maxlength="12" minlength="3">
+        <!-- Para validar el minimo y maximo de caracteres deseados -->
+        <input type="submit">
+    </form>
+
+    <!-- <input type="submit" form="formulario"> -->
+    <!-- se linkea el submit al del form para que se envie con la etiqueta fuera -->
+
+    <br><br>
+    <h2>Resultado del JS......................</h2>
+    <script src="2. DOM.js"></script>
+    <br><br>
+    <a href="index.html">Regresar</a>
+</body>
+</html>

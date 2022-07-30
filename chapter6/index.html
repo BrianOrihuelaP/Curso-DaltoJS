@@ -8,22 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>DOM y su implementación en JS</h1>
+    <h1 class="titulo">DOM y su implementación en JS</h1>
     <p id="parrafo"> Este es un parrafo</p>
     <p class="parra"> Este es un parrafo con clase</p>
 
-    <p class="node"> Este es un parrafo nodo #!</p>
-    <p class="node"> Este es un parrafo nodo #2</p>
-    <p class="node"> Este es un parrafo nodo #3</p>
-    <p class="node"> Este es un parrafo nodo #4</p>
-    <p class="node"> Este es un parrafo nodo #5</p>
+    <p class="node" tabindex="2"> Este es un parrafo nodo #!</p>
+    <p class="node" tabindex="3"> Este es un parrafo nodo #2</p>
+    <p class="node" tabindex="4"> Este es un parrafo nodo #3</p>
+    <p class="node" tabindex="5"> Este es un parrafo nodo #4</p>
+    <p class="node" tabindex="6"> Este es un parrafo nodo #5</p>
+    <!-- tabindex no spermite seleccionar los elementos desde el tabulador -->
 
     <!-- modificacion de atributos con JS -->
-    <input type="range" class="rango" name="edad">
-    <label>Rango de edad</label>
+    <label for="edad">Rango de edad</label>
+    <input class="rango" name="edad">
+   
+    <!-- tabindex de atributos con JS -->
+    <h3 class="seleccion">Elemento tabindex - seleccion</h3>
 
-
+    <!-- impresion de resultados JS -->
     <h2>Obtención de los elementos con JS</h2>
     <script src="1. DOM.js"></script>
+    <br><br><br>
+    <a href="atributosInput.html">Atributos input</a>
 </body>
 </html>

@@ -23,18 +23,39 @@ h2{
     text-shadow: 8px 8px 6px rgb(0, 0, 0);
 }
 
+h3{
+    text-align: center;
+}
+
 input{
+    color: black;
     display: block;
     margin: auto;
+}
+
+input.texto{
     box-shadow: 6px 8px 7px rgb(187, 48, 48);
 }
 
 label{
     font-size: 18px;
-    display: inline;
-    position: fixed;
-    left: 36%;
-    top: 53%;
+    margin-left: 38%;
+    margin-right: 10px;
 }
+/* si se mueve el label del input, este tambien se movera */
+
+a{
+    display: inline;   
+    text-decoration: overline underline;
+    text-shadow: 4px 2px 4px rgb(201, 106, 106);
+    color: rgb(223, 149, 149);
+}
+
+a:hover{
+    font-size: 18px;
+    text-shadow: 5px 7px 4px rgb(201, 135, 135);
+}
+
+
 
 
