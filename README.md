@@ -36,6 +36,8 @@ Hola, este es un repositorio con practicas y ejercicios para reforzar el lenguaj
 - - Funciones de temporización
 - - Estilo al texto en consola
 
+> Si has llegado hasta esta parte, gracias por mirar mi repo, espero y te sea de gran ayuda!
+> ![Thank You](https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/CXEJ7EGFWRDPJAJWWQU7RUTOLA.gif)
 
 
 
